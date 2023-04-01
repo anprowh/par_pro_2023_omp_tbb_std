@@ -2,7 +2,8 @@
 
 #include "../../../modules/task_1/chubenko_a_dijkstra/dijkstra.h"
 
-std::vector<int> get_dists_dijkstra(std::vector<int> graph, int size, int start) {
+std::vector<int> get_dists_dijkstra(std::vector<int> graph,
+                                    int size, int start) {
     std::vector<int> dists(size, INT_MAX);
     std::vector<bool> used(size, false);
     dists[start] = 0;

@@ -13,7 +13,7 @@ TEST(Dijkstra_Sequential, Test_Count_5) {
                              };
     const std::vector<int> expected = {0, 6, 7, 7, 8};
     std::vector<int> dists = get_dists_dijkstra(graph, size, 0);
-    
+
     ASSERT_EQ(dists, expected);
 }
 
@@ -60,4 +60,3 @@ int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
-
